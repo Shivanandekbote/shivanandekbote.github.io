@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Join Our Newsletter | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background: #f7f9fb;
+        font-family: 'Inter', Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 18px;
+        font-weight: 700;
+        color: #181818;
+        text-align: center;
+      }
+      p {
+        font-size: 1.15rem;
+        margin-bottom: 22px;
+        text-align: center;
+        color: #5f6c7b;
+        line-height: 1.6;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 420px;
+        background: #fff;
+        box-shadow: 0 4px 24px rgba(50, 82, 223, 0.08);
+        border-radius: 20px;
+        padding: 32px 24px;
+      }
+      label {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      input[type="email"] {
+        width: 100%;
+        padding: 14px 16px;
+        margin-bottom: 16px;
+        border: 1.5px solid #e3e8ee;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border 0.2s;
+        outline: none;
+        background: #f7f9fb;
+      }
+      input[type="email"]:focus {
+        border: 1.5px solid #3252df;
+        background: #fff;
+      }
+      button {
+        padding: 14px 0;
+        background-color: #3252DF;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 8px rgba(50, 82, 223, 0.08);
+        transition: background 0.2s;
+      }
+      button:hover {
+        background-color: #2236a8;
+      }
+      p:last-of-type {
+        font-size: 0.95rem;
+        color: #888;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.95rem;
+        }
+        .input {
+          padding: 24px 10px;
+        }
+      }
+      @media (max-width: 400px) {
+        h1 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        .input {
+          padding: 16px 4px;
+        }
+      }
+      .newsletter-icon {
+        margin-bottom: 24px;
+      }
+      .newsletter-icon img {
+        width: 48px;
+        height: 48px;
+      }
+      .visually-hidden {
+        position: absolute !important;
+        height: 1px; width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap;
+      }
+      .confidential-text {
+        margin: 0;
+        color: #888;
+        font-size: 0.95rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Join our newsletter
+ 
+    Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.
+ 
+    Enter your email address
+ 
+    Subscribe now
+ 
+    Your email is 100% confidential and won’t send you any spam.
+
+    -->
+
+   <div class="container">
+    <!-- Newsletter Icon -->
+    <div class="newsletter-icon">
+      <img src="resources/logo.svg" alt="Newsletter Icon">
+    </div>
+    <h1>Join our newsletter</h1>
+    <p>Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+
+    <form class="input">
+      <label for="email" class="visually-hidden">Enter your email address</label>
+      <input type="email" id="email" placeholder="Enter your email address" required />
+      <button type="submit">Subscribe now</button>
+      <p class="confidential-text">Your email is 100% confidential and won’t send you any spam.</p>
+    </form>
+   </div>
+  </body>
+</html>
